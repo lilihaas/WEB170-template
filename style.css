@@ -11,15 +11,14 @@ Version:42.0
     border: 0;
 }
 @font-face {
-    font-family: 'sinkin_sans100_thin';
-    src: url('SinkinSans-100Thin-webfont.eot');
-    src: url('SinkinSans-100Thin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('SinkinSans-100Thin-webfont.woff') format('woff'),
-         url('SinkinSans-100Thin-webfont.ttf') format('truetype'),
-         url('SinkinSans-100Thin-webfont.svg#sinkin_sans100_thin') format('svg');
+    font-family:'sinkin_sans100_thin';
+    src: url('fonts/SinkinSans-100Thin-webfont.eot');
+    src: url('fonts/SinkinSans-100Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/SinkinSans-100Thin-webfont.woff') format('woff'),
+         url('fonts/SinkinSans-100Thin-webfont.ttf') format('truetype'),
+         url('fonts/SinkinSans-100Thin-webfont.svg#sinkin_sans100_thin') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 body {
     /*font-size: 100%; /* 16px */
@@ -86,13 +85,13 @@ overflow: hidden;
 	.navigation li {
         position: relative;
         font-size: 1em;
-/*        font-weight: 300;*/
+        font-weight: 800;
 		list-style-type: none;
 		display: inline-block;
 		}
     .navigation .donate li{
         position: relative;
-/*        font-weight: 300;*/
+        font-weight: 800;
         font-size: 1em; /* 18px/16px */
 		list-style-type: none;
 		display: inline-block;
@@ -171,14 +170,14 @@ margin: 20px auto;
 }
 .slideImage .inner_box h1{   
    font-size: 2.5em;
-/*   font-weight: 300;*/
+   font-weight: 300;
    color:#000000;
 }
 .slideImage .inner_box .button{
    font-family: 'sinkin_sans100_thin', sans-serif, sans-serif, ariel;
     background-color: #F47D48;
     font-size: 1em;
-    font-weight: 300;
+    font-weight: 800;
     float: left;
     padding: 10px 15px;
     margin-top:120px;
@@ -218,7 +217,7 @@ img .imgCta3 {
 .button {
     background-color: #F47D48;
     font-size: 0.87em;
-/*    font-weight: 300; */
+    font-weight: 800; 
     border-radius: 3px;
     color: #FFFFFF;
     padding: 8px 15px;
@@ -276,7 +275,7 @@ padding: 2px 5px;
 }
 
 .navigation_footer li {
-/*font-weight: 800;    */
+font-weight: 800;    
 font-size: 70%;    
 color: #626D7F;
 list-style-type: none;
@@ -375,7 +374,7 @@ margin-bottom: 1.3em;
 
 p  a{
 text-decoration: none; 
-/*font-weight: bolder;    */
+font-weight: bolder;    
 margin-bottom: 1.3em;
 color:#000000;
 }
