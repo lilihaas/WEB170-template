@@ -31,14 +31,14 @@
            
         </div> <!-- end utilities-->
     </div> <!--end header-->
-    <div id="nav"> 
+ <!--   <div id="nav"> 
             <div class="fix">
             <ul class='navigation'>
                 <li><a href="main.html">ABOUT</a><ul>
                         
-                    <li><a href="mission.html">MISSION</a></li>
+                    <li><a href="mission.html">MISSION</a></li>-->
                         
-            </ul></li>
+         <!--   </ul></li>
                 <li><a href="main.html">ADOPTION</a><ul>
                         
                     <li><a href="main.html">DOGS</a></li>
@@ -48,14 +48,17 @@
                  </ul></li>
                 <li class="donate"><a href="main.html">DONATE</a></li>
                 <li><a href="main.html">CONTACT</a></li>
-             </ul>
+             </ul>-->
             
                 
-      </div>    <!--end fix drop down menu-->
- </div><!--nav-->
+     <!-- </div>    <!--end fix drop down menu-->
+<!-- </div><!--nav-->
 <!--+++++++++++++++++++START MOBILE NAVIGATION++++++++++++++-->
   
+<!-- Begin WordPress Menu-->
+<?php wp_nav_menu(array ('theme_location' =>'main-menu' ,'container' => 'div', 'container_id' =>'nav', 'container_class' =>'fix', 'menu_class' => 'navigation'));?> 
     
+<!-- End WordPress Menu -->     
     
 <button class="nav-button">Toggle Navigation</button>
 
