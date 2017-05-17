@@ -78,9 +78,10 @@ overflow: hidden;
 		text-align: right;
 
 		}
-    .navigation .donate {
+    .menu-item-94 {
         background-color:#F47D48;
-        border-radius: 1.5px;    
+        border-radius: 1.5px;
+        color: #FFFFFF;
         }
 	.navigation li {
         position: relative;
@@ -89,8 +90,9 @@ overflow: hidden;
 		list-style-type: none;
 		display: inline-block;
 		}
-    .navigation .donate li{
+    li.menu-item-94 { /*navigation .donate li  change for the wordpress class*/
         position: relative;
+        color: white;
         font-weight: 800;
         font-size: 1em; /* 18px/16px */
 		list-style-type: none;
@@ -98,28 +100,47 @@ overflow: hidden;
 		}
 		
 		.navigation li a {
-            color:#000000;
             text-decoration: none;
 			padding: 5px 40px;
 			display: block;
-			} 
-        .navigation li.donate > a{
+            color:black;
+			}
+        li.menu-item-94 > a{
             text-decoration: none;
 			padding: 5px 40px;
 			display: block;
-            color:#FFFFFF;
+            color:white;
 			} 
-        .navigation li.current > a {  
+         .navigation li.current-menu-item > a {
         color:#F47D48;
         }
- 
-		.navigation li a:hover {
+        li.menu-item-94.current-menu-item> a {
+        color:black;
+        }
+        .navigation li a:hover {
 			color:#F47D48;
 			}
-        .navigation li.donate > a:hover {
-			color:#000000;
+        li.menu-item-94 > a:hover {
+			color:black;
 			}
-     
+     /*thumbnails selectors*/
+img.wp-post-image {}
+img.attachment-thumbnail {
+    float:left;
+    margin:4px 20px 0 0;
+}
+img.attachment-medium {}
+img.attachment-large {}
+img.attachment-full {}
+
+article.post-excerpt {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+article.post-excerpt li a {
+    text-decoration: none;
+    color: #000;
+}
 
         /* SUBMENU*/
         .navigation li ul {
@@ -128,7 +149,7 @@ overflow: hidden;
         text-align: left;    
 	    display:none;
         }
-        .navigation ul li ul li {  
+        .navigation ul li ul li {
         display: block;    
         position: absolute;
         }
@@ -187,6 +208,27 @@ margin: 20px auto;
 
 .mySlides {display:none}
 
+/* #sidebar {
+    width: 400px;
+    float:right;
+} */
+.post-excerpt a{
+    text-decoration: none;
+    color:#F47D48;
+}
+.post-excerpt a:hover{
+    text-decoration: none;
+    color:black;
+}
+.post a{
+    text-decoration: none;
+    color:#F47D48;
+}
+.post a:hover{
+    text-decoration: none;
+    color:black;
+}
+
 #ctaMain{
 max-width:960px;
 margin: 0 auto;   
@@ -203,7 +245,16 @@ margin: 0 auto;
         margin-left: 20px;
         margin-right: 20px;
     }
-
+    .cta2 li {
+        list-style-type:none;
+    }
+    .cta2 li a {
+        text-decoration: none;
+        color: #000;
+    }
+    .cta2 li a:hover {
+        color:#F47D48;
+    }
     .cta3 {
         width:306.66px;
         float: right;
@@ -270,16 +321,16 @@ border-top: 1px solid #626D7F;
         .navigation_footer li:hover ul ul, .navigation_footer li.over ul ul {
 	   display:none;
         }
-.navigation_footer {    
-padding: 2px 5px;   
+.navigation_footer {
+
 }
 
 .navigation_footer li {
 font-weight: 800;    
-font-size: 70%;    
+font-size: 70%;
 color: #626D7F;
 list-style-type: none;
-padding-left: 10px;
+padding-left: 15px;
 }
 
 .navigation_footer li a {      
