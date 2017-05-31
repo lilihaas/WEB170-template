@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><?php bloginfo('description'); ?> <?php bloginfo('name'); ?> Adorable Mutts Pet Rescue Template</title>
+  <!--<title><?php //bloginfo('description'); ?> <?php //bloginfo('name'); ?> Adorable Mutts Pet Rescue Template</title> -->
+    <title><?php get_mikes_title_tag(); ?></title>
+    <!--Begin meta-->
+    <meta name="description" content="<?php the_excerpt(); ?>"/>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <!--End meta-->
   <!--<link rel="stylesheet" href="css/stylesheet.css" type="text/css" />-->
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
 
