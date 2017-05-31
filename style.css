@@ -172,7 +172,10 @@ article.article a {
 .nav-button, .primary-nav {
 	display: none;
 }
-
+#pull-quote blockquote{
+    font-size: 20px;
+    color:#F47D48;
+}
 main {
 max-width: 960px;
 margin: 20px auto; 

@@ -23,6 +23,12 @@ add_theme_support( 'post-thumbnails' );
 //create page excerpts
 add_post_type_support('page', 'excerpt');
 
+// Register sidebars
+register_sidebars(5, array('before_widget' => '<div id="%1$s class="widget %2$s">', 'after_widget' => '</div'));
+
+
+register_sidebar(array('name' => __('Name1', 'name1'), 'before_widget' => '<div id="%1$s class="widget %2$s">', 'after_widget' => '</div'));
+
 ?>
 
 

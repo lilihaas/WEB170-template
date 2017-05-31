@@ -1,10 +1,12 @@
 <!-- Begin Sidebar -->
 <div id="sidebar">
+    <!--Begin Sub Navigation -->
+    <div id="sub-navigation" class="widget">
     <h2><?php
       if (is_page()) {
         echo get_the_title( $post->post_parent );
       } else { //if not be on a page list title as "Blog"
-        echo 'Blog';
+        echo 'BLOG';
 
       }
       ?>
@@ -28,5 +30,21 @@
           }
           ?>
         </ul>
+    </div>
+    <!--End Sub Navigation-->
+    <!--Begin Quote-->
+    <div id="pull-quote" class="widget">
+        <?php if(get_post_meta($post ->ID, "Quote", true)): ?>
+        <blockquote><?php echo get_post_meta($post -> ID, "Quote", true); ?></blockquote>
+        <?php endif; ?>
+    </div>
+    <!--End Quote-->
+
+    <!--Begin Widgets-->
+    <?php dynamic_sidebar(1); ?>
+  <?php dynamic_sidebar(2); ?>
+  <?php dynamic_sidebar(''); ?>
+
+    <!--Enf Widgets-->
 </div>
 <!-- End Sidebar -->
